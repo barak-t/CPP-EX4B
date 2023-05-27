@@ -1,5 +1,7 @@
 #pragma once
 
+#include <string>
+#include <stdexcept>
 
 namespace ariel {
 
@@ -12,6 +14,6 @@ namespace ariel {
         Point(double, double);
         double distance(Point const &other) const;
         void print() const;
-        Point moveTowards(Point source, Point dest, double distance) const;
+        static Point moveTowards(Point source, Point dest, double distance);
     };
 }
